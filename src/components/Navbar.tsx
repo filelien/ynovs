@@ -25,23 +25,23 @@ export default function Navbar() {
           {/* Bloc logo + titre parfaitement aligné */}
           <Link
             to="/"
-            className="flex items-center gap-3 lg:gap-4 min-w-0"
+            className="flex items-center gap-3 lg:gap-4 min-w-0 flex-shrink-0"
           >
             <div className="flex h-14 w-14 lg:h-16 lg:w-16 items-center justify-center rounded-2xl bg-white shadow-sm shrink-0 overflow-hidden border border-gray-100">
               <Logo className="h-10 w-10 lg:h-12 lg:w-12" />
             </div>
             <div className="flex flex-col justify-center leading-tight text-gray-900">
-              <span className="text-xl lg:text-2xl font-bold tracking-wide">
+              <span className="text-xl lg:text-2xl font-bold tracking-wide whitespace-nowrap">
                 YNOV-AFRIK
               </span>
-              <span className="text-[11px] sm:text-xs lg:text-sm text-gray-600">
+              <span className="hidden md:block text-xs lg:text-sm text-gray-600 whitespace-nowrap">
                 Excellence IT &amp; Data Services
               </span>
             </div>
           </Link>
 
           {/* Menu desktop */}
-          <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
+          <div className="hidden md:flex flex-1 items-center justify-center space-x-8 lg:space-x-10">
             <Link to="/services" className="text-gray-700 hover:text-blue-600 transition font-semibold text-lg">
               Services
             </Link>
