@@ -1,12 +1,18 @@
 import logoImage from '../logo/Ynov.png';
 
-export default function Logo({ className = "h-16 w-auto" }: { className?: string }) {
+type LogoProps = {
+  className?: string;
+};
+
+export default function Logo({ className = '' }: LogoProps) {
+  const baseClasses = 'h-16 w-16 object-contain';
+
   return (
     <img
       src={logoImage}
       alt="YNOV-AFRIK Logo"
-      className={className}
-      style={{ objectFit: 'contain' }}
+      className={`${baseClasses} ${className}`.trim()}
+      loading="eager"
     />
   );
 }

@@ -1,17 +1,3 @@
-# Configuration de l'Envoi d'Emails
-
-Ce guide vous explique comment configurer l'envoi d'emails pour le formulaire de contact.
-
-## Option 1 : EmailJS (Recommandé pour débuter)
-
-EmailJS est un service gratuit qui permet d'envoyer des emails directement depuis le frontend sans backend.
-
-### Étapes :
-
-1. **Créer un compte sur EmailJS**
-   - Allez sur https://www.emailjs.com/
-   - Créez un compte gratuit (100 emails/mois)
-
 2. **Configurer un service email**
    - Dans le dashboard, allez dans "Email Services"
    - Ajoutez un service (Gmail, Outlook, etc.)

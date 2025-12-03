@@ -22,11 +22,13 @@ export default function Navbar() {
     <nav className="fixed w-full bg-white shadow-md z-50">
       <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex justify-between items-center h-24">
-          <Link to="/" className="flex items-center space-x-4">
-            <Logo className="h-20 w-auto" />
-            <div>
-              <h1 className="text-3xl font-bold text-gray-900">YNOV-AFRIK</h1>
-              <p className="text-sm text-gray-600">Excellence IT & Data Services</p>
+          <Link to="/" className="flex items-center gap-4 min-w-0">
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-gray-100 bg-white shadow-sm shrink-0 overflow-hidden">
+              <Logo className="h-12 w-12" />
+            </div>
+            <div className="flex flex-col leading-tight text-gray-900">
+              <h1 className="text-2xl font-bold tracking-wide whitespace-nowrap">YNOV-AFRIK</h1>
+              <p className="text-sm text-gray-600 leading-snug">Excellence IT & Data Services</p>
             </div>
           </Link>
 
