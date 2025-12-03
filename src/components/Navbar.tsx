@@ -21,20 +21,27 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full bg-white shadow-md z-50">
       <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="flex justify-between items-center h-24 gap-6">
-          <Link to="/" className="flex items-center gap-4 min-w-0 md:mr-8 lg:mr-12">
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-gray-100 bg-white shadow-sm shrink-0 overflow-hidden">
-              <Logo className="h-12 w-12" />
+        <div className="flex items-center justify-between h-24">
+          {/* Bloc logo + titre parfaitement aligné */}
+          <Link
+            to="/"
+            className="flex items-center gap-3 lg:gap-4 min-w-0"
+          >
+            <div className="flex h-14 w-14 lg:h-16 lg:w-16 items-center justify-center rounded-2xl bg-white shadow-sm shrink-0 overflow-hidden border border-gray-100">
+              <Logo className="h-10 w-10 lg:h-12 lg:w-12" />
             </div>
-            <div className="flex flex-col text-gray-900 max-w-[180px] sm:max-w-[220px]">
-              <h1 className="text-2xl font-bold tracking-wide whitespace-nowrap">YNOV-AFRIK</h1>
-              <p className="text-xs sm:text-sm text-gray-600 leading-snug">
+            <div className="flex flex-col justify-center leading-tight text-gray-900">
+              <span className="text-xl lg:text-2xl font-bold tracking-wide">
+                YNOV-AFRIK
+              </span>
+              <span className="text-[11px] sm:text-xs lg:text-sm text-gray-600">
                 Excellence IT &amp; Data Services
-              </p>
+              </span>
             </div>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-10">
+          {/* Menu desktop */}
+          <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
             <Link to="/services" className="text-gray-700 hover:text-blue-600 transition font-semibold text-lg">
               Services
             </Link>
