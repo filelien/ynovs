@@ -21,14 +21,16 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full bg-white shadow-md z-50">
       <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="flex justify-between items-center h-24">
-          <Link to="/" className="flex items-center gap-4 min-w-0">
+        <div className="flex justify-between items-center h-24 gap-6">
+          <Link to="/" className="flex items-center gap-4 min-w-0 md:mr-8 lg:mr-12">
             <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-gray-100 bg-white shadow-sm shrink-0 overflow-hidden">
               <Logo className="h-12 w-12" />
             </div>
-            <div className="flex flex-col leading-tight text-gray-900">
+            <div className="flex flex-col text-gray-900 max-w-[180px] sm:max-w-[220px]">
               <h1 className="text-2xl font-bold tracking-wide whitespace-nowrap">YNOV-AFRIK</h1>
-              <p className="text-sm text-gray-600 leading-snug">Excellence IT & Data Services</p>
+              <p className="text-xs sm:text-sm text-gray-600 leading-snug">
+                Excellence IT &amp; Data Services
+              </p>
             </div>
           </Link>
 
