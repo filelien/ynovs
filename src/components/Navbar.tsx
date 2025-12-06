@@ -32,7 +32,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col justify-center leading-tight text-gray-900">
               <span className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-wide whitespace-nowrap group-hover:text-blue-700 transition-colors duration-200">
-                YNOV-AFRIK
+                INOV AFRIK
               </span>
               <span className="hidden md:block text-[11px] sm:text-xs lg:text-sm text-gray-600 whitespace-nowrap">
                 Excellence IT &amp; Data Services

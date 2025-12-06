@@ -1,9 +1,9 @@
 // Netlify Function pour envoyer des emails via SMTP Gmail
-// Nécessite le package "nodemailer" et des variables d'environnement Netlify
+// Utilise CommonJS pour une compatibilité maximale avec Netlify Functions
 
-import nodemailer from 'nodemailer';
+const nodemailer = require('nodemailer');
 
-export const handler = async (event) => {
+exports.handler = async (event) => {
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 405,

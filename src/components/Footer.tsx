@@ -16,7 +16,7 @@ export default function Footer() {
             <Link to="/" className="flex items-center space-x-3">
               <Logo className="h-12 w-auto" />
               <div>
-                <h3 className="text-2xl font-bold">YNOV-AFRIK</h3>
+                <h3 className="text-2xl font-bold">INOV AFRIK</h3>
                 <p className="text-sm text-gray-400">Excellence IT & Data</p>
               </div>
             </Link>
@@ -155,9 +155,23 @@ export default function Footer() {
             </div>
           </div>
 
+          <div className="mb-6 pb-6 border-b border-gray-800">
+            <div className="grid md:grid-cols-3 gap-4 text-sm text-gray-400">
+              <div>
+                <span className="font-semibold text-gray-300">RCCM:</span> TG-LFW-01-2023-A10-02858
+              </div>
+              <div>
+                <span className="font-semibold text-gray-300">NIF:</span> 1001853268
+              </div>
+              <div>
+                <span className="font-semibold text-gray-300">CNSS:</span> 71430
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2025 YNOV-AFRIK. Tous droits réservés. | 15+ ans d'excellence IT en Afrique et dans le monde
+              © 2025 INOV AFRIK. Tous droits réservés. | 15+ ans d'excellence IT en Afrique et dans le monde
             </p>
             <button
               onClick={scrollToTop}
